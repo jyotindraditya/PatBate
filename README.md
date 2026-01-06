@@ -1,5 +1,4 @@
 The dataset is the script of a well known movie.
-
 Using Tensorflow, I built this autoregressive language processing model that takes an input and predicts what comes next, character by character.
 It predicts the next character on the basis of its conditional probability given the previous sequence of characters.
 The prediction is then iteratively sent in as the input to continue the predictions.
