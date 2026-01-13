@@ -1,6 +1,5 @@
 import tensorflow as tf
 import numpy as np
-import os
 
 with open("american_psycho.txt", "r", encoding="utf-8") as f:
     text = f.read()
@@ -71,5 +70,6 @@ def generate_text(model, start_string, num_chars=500, temperature=1.0):
             axis=1
         )
     return generated_text
+
 
 print(generate_text(model, start_string="There is an idea", num_chars=500))
